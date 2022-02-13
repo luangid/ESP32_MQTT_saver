@@ -1,5 +1,4 @@
 #include <Arduino.h>
-
 // internet conections
 #include "WiFi.h"
 #include <include/arduino-mqtt-master/src/MQTTClient.h>
@@ -49,7 +48,6 @@ struct Date
     uint8_t hour;
     uint8_t min;
     uint8_t sec;
-    // ref: https://www.youtube.com/watch?v=3cCetLjpWwY&ab_channel=FernandoKTecnologia
 };
 
 Date getDate()
@@ -64,7 +62,6 @@ Date getDate()
     date.hour = tmstruct.tm_hour;
     date.min = tmstruct.tm_min;
     date.sec = tmstruct.tm_sec;
-    // Serial.printf("\nNow is : %d-%02d-%02d %02d:%02d:%02d\n", (tmstruct.tm_year) + 1900, (tmstruct.tm_mon) + 1, tmstruct.tm_mday, tmstruct.tm_hour, tmstruct.tm_min, tmstruct.tm_sec);
     return date;
 }
 String createPath()
@@ -86,8 +83,6 @@ String createPath()
 
 void createJsonDirTree(const char *mDir, bool isFile)
 {
-    // https://github.com/espressif/arduino-esp32/blob/master/libraries/SD/examples/SD_Test/SD_Test.ino
-    // https://github.com/bblanchon/ArduinoJson/tree/6.x/examples
     File root = SD.open(mDir);
     File folder = root.openNextFile();
     size_t len;
