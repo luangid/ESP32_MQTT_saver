@@ -195,8 +195,7 @@ void beginWiFi()
     wf.persistent(false);
     wf.mode(WIFI_STA);
     wf.begin(WL_SSID, WL_PASSWORD);
-    // wf.begin("TP-Link_8263", "15237033");
-    //  wf.begin("TEMPERO_DO_POLEN_COMFIBRA", "temperos");
+  
     int countTries = 0;
     while (wf.status() != WL_CONNECTED)
     {
