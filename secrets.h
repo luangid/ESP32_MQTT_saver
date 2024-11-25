@@ -3,13 +3,13 @@
 #define SECRET
 #define THINGNAME "SAVER"
 
-const char *WL_SSID = "IFPR-ADM";
-const char *WL_PASSWORD = "@ifpr#Ragnar0k";
+const char *WL_SSID = " ";
+const char *WL_PASSWORD = " ";
 
-const char *WL_SSID2 = "TP-Link_8263";
-const char *WL_PASSWORD2 = "15237033";
+const char *WL_SSID2 = " ";
+const char *WL_PASSWORD2 = " ";
 
-const char AWS_IOT_ENDPOINT[] = "a2vz5gl3tw6yfx-ats.iot.sa-east-1.amazonaws.com";
+const char AWS_IOT_ENDPOINT[] = " ";
 
 // Amazon Root CA 1
 static const char AWS_CERT_CA[] PROGMEM = R"EOF(
